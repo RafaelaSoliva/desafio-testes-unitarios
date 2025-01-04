@@ -34,6 +34,9 @@ public class ValidacoesString {
     
     public bool ContemLetraOuPalavra(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a letra ou palavra buscada for encontrada
+        texto = texto.ToUpper();
+        letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
+
         if (texto.Contains(letraOuPalavraBuscada)) {
             return true;
         } else {
