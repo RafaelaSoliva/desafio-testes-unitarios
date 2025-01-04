@@ -8,7 +8,7 @@ public class ValidacoesString {
         return !string.IsNullOrWhiteSpace(texto);
     }
 
-    public bool EUmNumero(string texto) {
+    public bool AStringEUmNumero(string texto) {
         // Retorna verdadeiro se a string for composta apenas por números
         return int.TryParse(texto, out int textoInt);
     }
