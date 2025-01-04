@@ -3,7 +3,7 @@ namespace Services;
 public class ValidacoesString {
     public bool AStringEVazia(string texto) {
         // Retorna verdadeiro se a string não possuir conteúdo
-        return !string.IsNullOrWhiteSpace(texto);
+        return string.IsNullOrWhiteSpace(texto);
     }
 
     public bool AStringEUmNumero(string texto) {
