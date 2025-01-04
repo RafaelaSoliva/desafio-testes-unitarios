@@ -20,6 +20,8 @@ public class ValidacoesString {
     
     public bool IniciaCom(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a string iniciar com a letra ou palavra buscada
+        texto = texto.ToUpper();
+        letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
         return texto.StartsWith(letraOuPalavraBuscada);
     }
 
