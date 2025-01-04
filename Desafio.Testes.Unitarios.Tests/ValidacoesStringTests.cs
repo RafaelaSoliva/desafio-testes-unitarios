@@ -8,7 +8,7 @@ public class ValidacoesStringTests
     ValidacoesString validacoesString = new ValidacoesString();
 
     [Fact] // Testa o método AStringEVazia
-    public void RecebeUmaStringVaziaEDeveRetornarFalse() {
+    public void RecebeUmaStringVaziaEDeveRetornarTrue() {
         // Arrange
         string texto = "";
 
@@ -16,11 +16,11 @@ public class ValidacoesStringTests
         var resultado = validacoesString.AStringEVazia(texto);
 
         // Assert
-        Assert.False(resultado);
+        Assert.True(resultado);
     }
 
     [Fact] // Testa o método AStringEVazia
-    public void RecebeUmaStringComEspacoVazioEDeveRetornarFalse() {
+    public void RecebeUmaStringComEspacoVazioEDeveRetornarTrue() {
         // Arrange
         string texto = " ";
 
@@ -28,11 +28,11 @@ public class ValidacoesStringTests
         var resultado = validacoesString.AStringEVazia(texto);
 
         // Assert
-        Assert.False(resultado);
+        Assert.True(resultado);
     }
 
     [Fact] // Testa o método AStringEVazia
-    public void RecebeUmaStringComConteudoEDeveRetornarTrue() {
+    public void RecebeUmaStringComConteudoEDeveRetornarFalse() {
         // Arrange
         string texto = "Teste";
 
@@ -40,7 +40,7 @@ public class ValidacoesStringTests
         var resultado = validacoesString.AStringEVazia(texto);
 
         // Assert
-        Assert.True(resultado);
+        Assert.False(resultado);
     }
 
     [Fact] // Testa o método AStringEUmNumero
