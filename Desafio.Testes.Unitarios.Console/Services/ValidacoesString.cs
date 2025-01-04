@@ -27,6 +27,8 @@ public class ValidacoesString {
 
     public bool TerminaCom(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a string terminar com a letra ou palavra buscada
+        texto = texto.ToUpper();
+        letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
         return texto.EndsWith(letraOuPalavraBuscada);
     }
     
