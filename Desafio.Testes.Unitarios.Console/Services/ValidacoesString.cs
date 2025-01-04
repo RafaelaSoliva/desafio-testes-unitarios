@@ -47,10 +47,7 @@ public class ValidacoesString {
         texto = texto.ToUpper();
         letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
 
-        if (texto.Contains(letraOuPalavraBuscada)) {
-            return true;
-        } else {
-            return false;
-        }
+        // Retorno
+        return texto.Contains(letraOuPalavraBuscada);
     }
 }
