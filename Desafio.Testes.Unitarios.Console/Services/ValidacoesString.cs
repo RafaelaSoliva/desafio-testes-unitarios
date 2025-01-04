@@ -20,20 +20,30 @@ public class ValidacoesString {
     
     public bool IniciaCom(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a string iniciar com a letra ou palavra buscada
+
+        // Padroniza as strings para a comparação
         texto = texto.ToUpper();
         letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
+
+        // Retorno
         return texto.StartsWith(letraOuPalavraBuscada);
     }
 
     public bool TerminaCom(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a string terminar com a letra ou palavra buscada
+
+        // Padroniza as strings para a comparação
         texto = texto.ToUpper();
         letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
+
+        // Retorno
         return texto.EndsWith(letraOuPalavraBuscada);
     }
     
     public bool ContemLetraOuPalavra(string texto, string letraOuPalavraBuscada) {
         // Retorna verdadeiro se a letra ou palavra buscada for encontrada
+
+        // Padroniza as strings para a comparação
         texto = texto.ToUpper();
         letraOuPalavraBuscada = letraOuPalavraBuscada.ToUpper();
 
